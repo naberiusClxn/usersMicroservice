@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naberius Stats</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="background-circles">
+    <div class="circle circle1"></div>
+    <div class="circle circle2"></div>
+    <div class="circle circle3"></div>
+</div>
+<div class="form-container">
+    <h2>Naberius Stats: Sign In</h2>
+    <form id="loginForm">
+        <div class="input-group">
+            <input type="email" placeholder="Email or Username" id="email" required>
+        </div>
+        <div class="input-group">
+            <input type="password" placeholder="Password" id="password" required>
+        </div>
+        <div class="remember-me">
+            <input type="checkbox" id="rememberMe">
+            <label for="rememberMe">Remember me</label>
+        </div>
+        <button type="submit" class="login-button">LOGIN</button>
+        <div class="separator">Or</div>
+        <button onclick="window.location.href='/accounts/google/login/'" class="oauth-button google-signin">
+            <img src="google.png" alt="Google Icon">
+            Sign in with Google
+        </button>
+        <button onclick="window.location.href='/accounts/discord/login/'" class="oauth-button discord-signin">
+            <img src="discord.png" alt="Discord Icon">
+            Sign in with Discord
+        </button>
+        <p class="signup">Don't have an account? <a href="#">Sign up</a></p>
+    </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
