@@ -1,0 +1,171 @@
+body {
+    background: radial-gradient(circle 330px at  5% 95%, rgba(143, 154, 225, 0.6), transparent),
+                radial-gradient(circle 330px at 40% 5%, rgba(225, 171, 248, 0.6), transparent),
+                radial-gradient(circle 350px at 95% 50%, rgba(154, 188, 251, 0.7), transparent),
+                radial-gradient(circle at 50% 50%, rgba(230, 230, 250, 0.4), #ebf9ff);
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+form {
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    transform: translateX(-55px);
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #444;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.input-container {
+    position: relative;
+    margin: 10px 0;
+}
+
+.input-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 87%;
+    padding: 15px;
+    padding-left: 35px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button.login-button {
+    width: 100%;
+    background-color: #6a82fb;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, transform 0.1s ease-in-out;
+}
+
+button.login-button:hover {
+    background-color: #8675f3;
+    transform: scale(1.02);
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.remember-me-checkbox {
+    display: none;
+}
+
+.remember-me-custom {
+    width: 24px;
+    height: 24px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.remember-me-checkbox:checked + .remember-me-custom {
+    background-color: #0d1bfd;
+    border-color: #0d1bfd;
+}
+
+.remember-me-checkbox:checked + .remember-me-custom::before {
+    content: '✔';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 22px;
+    color: white;
+}
+
+.remember-me-label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+}
+
+.remember-me-label:hover .remember-me-custom {
+    border-color: #555;
+}
+
+.alt-login-buttons {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.alt-login-buttons button {
+    background-color: #f1f1f1;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 20px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease-in-out;
+    width: 100%;
+    max-width: 400px;
+}
+
+.alt-login-buttons button img {
+    height: 20px;
+    margin-right: 10px;
+}
+
+.alt-login-buttons button:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.02);
+}
+
+.sign-up-text {
+    color: #888;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.sign-up-text a {
+    color: #6a82fb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sign-up-text a:hover {
+    text-decoration: underline;
+}

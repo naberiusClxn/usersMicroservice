@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'reg/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <!-- Левая сторона -->
+        <div class="form-section">
+            <h1>Create account</h1>
+            <p class="team-name">Naberius Team</p>
+            <form>
+                <div class="input-container">
+                    <img src="{% static 'user.png' %}" alt="User Icon" class="input-icon">
+                    <input type="text" placeholder="Uname@mail.com" required>
+                </div>
+                <div class="input-container">
+                    <img src="{% static 'lockp.png' %}" alt="Lock Icon" class="input-icon">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <div class="input-container">
+                    <img src="{% static 'lockp.png' %}" alt="Lock Icon" class="input-icon">
+                    <input type="password" placeholder="Retype Password" required>
+                </div>
+                <button type="submit" class="register-button">Registration</button>
+                <p class="sign-up-text">Already have an account? <a href="/auth">Login</a></p>
+            </form>
+        </div>
+
+        <!-- Правая сторона -->
+        <div class="info-section">
+            <h2>Naberius Stats</h2>
+            <p>Track, Analyze, Improve – Your Activity, Your Data.</p>
+            <div class="features">
+                <div>Customizable Dashboards: Create personalized views to track your most relevant metrics.</div>
+                <div>Real-Time Tracking: Monitor live data and receive instant updates on ongoing activities.</div>
+                <div>Detailed Reports: Generate reports that break down data into insightful visualizations, such as graphs, charts, and tables.</div>
+                <div>Historical Data: Access past activity statistics to analyze trends over time.</div>
+                <div>Data Export: Export data in multiple formats, including CSV and PDF, for further analysis or sharing.</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

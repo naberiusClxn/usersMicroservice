@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Naberius Stats: Sign In</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'auth/styles.css' %}">
+</head>
+<body>
+    <form>
+        <h1>Naberius Stats: Sign In</h1>
+        <div class="input-container">
+            <img src="{% static 'user.png' %}" alt="User Icon" class="input-icon">
+            <input type="text" placeholder="Email or Username" required>
+        </div>
+        <div class="input-container">
+            <img src="{% static 'lockp.png' %}" alt="Lock Icon" class="input-icon">
+            <input type="password" placeholder="Password" required>
+        </div>
+        <div class="remember-me">
+            <label class="remember-me-label">
+                <input type="checkbox" class="remember-me-checkbox">
+                 <span class="remember-me-custom"></span>
+                Remember Me
+            </label>
+        </div>
+        <button type="submit" class="login-button">Login to account</button>
+        <div class="alt-login-buttons">
+            <button><img src="{% static 'google.png' %}" alt="Google">Sign in with Google</button>
+            <button><img src="{% static 'discord.png' %}" alt="Discord">Sign in with Discord</button>
+        </div>
+        <p class="sign-up-text">Don't have an account? <a href="/reg">Sign up</a></p>
+
+    </form>
+</body>
+</html>
